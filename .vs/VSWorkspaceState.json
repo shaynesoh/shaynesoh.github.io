@@ -2,14 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\utility",
-    "\\utility\\css",
     "\\utility\\other",
     "\\utility\\other\\bootstrap",
     "\\utility\\other\\bootstrap\\css",
     "\\works",
     "\\works\\foodee",
     "\\works\\henosis",
+    "\\works\\in-expat",
     "\\works\\straits-times"
   ],
+  "SelectedNode": "\\works\\foodee\\index.html",
   "PreviewInSolutionExplorer": false
 }
