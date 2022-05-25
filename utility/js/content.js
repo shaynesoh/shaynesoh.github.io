@@ -88,29 +88,29 @@
         el.addEventListener('scroll', listener)
     }
 
-    if ($('.illustrations').length > 0) {
+    if ($('.graphic').length > 0) {
         window.addEventListener('load', () => {
-            let illustrationsContainer = select('.illustrations');
-            if (illustrationsContainer) {
-                let illustrationsIsotope = new Isotope(illustrationsContainer, {
+            let graphicContainer = select('.graphic');
+            if (graphicContainer) {
+                let graphicIsotope = new Isotope(graphicContainer, {
                     itemSelector: '.iso-item',
                     layoutMode: 'masonry',
-                    filter: '.trad',
+                    filter: '.illustration',
                 });
 
-                let illustrationsFilters = select('#filters a', true);
+                let graphicFilters = select('#filters a', true);
 
                 on('click', '#filters a', function (e) {
                     e.preventDefault();
-                    illustrationsFilters.forEach(function (el) {
+                    graphicFilters.forEach(function (el) {
                         el.classList.remove('active');
                     });
                     this.classList.add('active');
 
-                    illustrationsIsotope.arrange({
+                    graphicIsotope.arrange({
                         filter: this.getAttribute('data-filter')
                     });
-                    illustrationsIsotope.on('arrangeComplete', function () {
+                    graphicIsotope.on('arrangeComplete', function () {
                         AOS.refresh()
                     });
                 }, true);

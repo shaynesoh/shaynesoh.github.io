@@ -208,23 +208,23 @@ table {
     About       
 -----------------------------------------*/
 
-.illustrations .filters {
+.graphic .filters {
     padding: 0;
 }
 
-    .illustrations .filters a {
+    .graphic .filters a {
         list-style: none;
         display: inline-block;
         padding: 0px 15px;
         cursor: pointer;
         position: relative;
-        font-size: 45px;
+        font-size: 4em;
         color: black;
-        font-weight: 500;
+        font-weight: 300;
         text-decoration: none;
     }
 
-        .illustrations .filters a:after {
+        .graphic .filters a:after {
             content: '';
             display: block;
             width: calc(0% - 60px);
@@ -234,18 +234,18 @@ table {
             transition: width 250ms ease-out;
         }
 
-        .illustrations .filters a:hover:after {
+        .graphic .filters a:hover:after {
             width: calc(100% - 30px);
             transition: width 250ms ease-out;
             background: #000;
         }
 
-        .illustrations .filters a.active:after {
+        .graphic .filters a.active:after {
             width: calc(100% - 30px);
             background: #000
         }
 
-        .illustrations .filters a:hover, .illustrations .filters a.active {
+        .graphic .filters a:hover, .graphic .filters a.active {
             color: #000
         }
 
@@ -376,8 +376,8 @@ table {
 
 @media (max-width: 1200px) {
 
-    .illustrations .filters a {
-        font-size: 40px;
+    .graphic .filters a {
+        font-size: 3.5em;
     }
 
     .grid-three {
@@ -395,8 +395,8 @@ table {
         width: 50%
     }
 
-    .illustrations .filters a {
-        font-size: 30px;
+    .graphic .filters a {
+        font-size: 3em;
     }
 
     .grid-four {
@@ -451,11 +451,11 @@ table {
         padding: 15px;
     }
 
-    .illustrations .filters a {
-        font-size: 20px;
+    .graphic .filters a {
+        font-size: 1.5em;
     }
 
-        .illustrations .filters a:after {
+        .graphic .filters a:after {
             height: 2px;
         }
 
@@ -484,7 +484,22 @@ table {
         width: 30%
     }
 
-    .illustrations .filters a {
-        font-size: 16px;
+    .graphic .filters a {
+        font-size: 1.25em;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .proj-title {
+        font-size: 2.5em;
+    }
+
+    table .first-col {
+        width: 30%
+    }
+
+    .graphic .filters a {
+        font-size: 1em;
     }
 }
