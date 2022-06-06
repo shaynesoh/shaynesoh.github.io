@@ -95,7 +95,7 @@
                 let graphicIsotope = new Isotope(graphicContainer, {
                     itemSelector: '.iso-item',
                     layoutMode: 'masonry',
-                    filter: '.illustration',
+                    filter: '.graphic',
                 });
 
                 let graphicFilters = select('#filters a', true);
